@@ -16,7 +16,7 @@ library(MLmetrics)
 
 ## Load the PD data set, deleting column 28 and id
 
-mydata <- read.delim ("D:/train_data.txt", header = FALSE, sep = ",")
+mydata <- read.delim (".../train_data.txt", header = FALSE, sep = ",")
 colnames(mydata)[29] <- "parkinson"
 mydata <- mydata[,-1]
 mydata <- mydata[,-27]
